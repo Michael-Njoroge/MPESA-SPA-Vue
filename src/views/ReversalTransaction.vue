@@ -1,8 +1,8 @@
 <template>
   <div class="container">
     <TopNav />
-    <div class="row my-4">
-      <div class="mx-auto col-sm-8">
+    <div class="row my-2">
+      <div class="mx-auto col-sm-10">
         <div class="card">
           <div class="card-header">
             Reverse Transaction
@@ -16,13 +16,13 @@
               <div v-else class="alert alert-info text-center">Fill the form and click the button to reverse transaction.</div>
             </div>
             <form @submit.prevent="reverseTransaction" id="stk-form">
-              <div class="form-group my-2">
-                <label for="transactionid">Transaction Id</label>
-                <input v-model="form.transactionid" type="text" name="transactionid" class="form-control" required>
+              <div class="form-group my-3">
+                <label for="transactionid">Transaction Id:</label>
+                <input v-model="form.transactionid" type="text" placeholder="Enter Transaction Id" name="transactionid" class="form-control" required>
               </div>
-              <div class="form-group my-2">
-                <label for="amount">Amount</label>
-                <input v-model="form.amount" type="number" name="amount" class="form-control" required>
+              <div class="form-group my-3">
+                <label for="amount">Amount:</label>
+                <input v-model="form.amount" type="number" name="amount" placeholder="Enter Amount" class="form-control" required>
               </div>
               <button id="simulatestk" type="submit" class="btn btn-primary w-100 mt-2" :disabled="isLoading">
                 <div v-if="isLoading" class="text-center">
@@ -82,5 +82,8 @@
   .text-center pre {
     white-space: pre-wrap;
     word-wrap: break-word;
+  }
+  label,.card-header{
+    font-weight: bold;
   }
 </style>

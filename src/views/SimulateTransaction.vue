@@ -1,9 +1,9 @@
 <template>
 <div class="container">
         <TopNav />
-        <div class="row mt-4">
-            <div class="mx-auto col-sm-8">
-             <div class="card my-4">
+        <div class="row mt-2">
+            <div class="mx-auto col-sm-10">
+             <div class="card my-2">
                 <div class="card-header">
                    Simulate Transaction
                 </div>
@@ -16,13 +16,13 @@
                         <div v-else class="alert alert-info text-center">Fill the Form and Click the button to Simulate Transaction.</div>
                     </div>
                     <form action="" @submit.prevent="simulateTransaction">
-                        <div class="form-group">
-                            <label for="amount">Amount</label>
-                            <input v-model="form.amount" type="number" name="amount" class="form-control" required>
+                        <div class="form-group my-3">
+                            <label for="amount">Amount:</label>
+                            <input v-model="form.amount" type="number" placeholder="Enter Amount" name="amount" class="form-control" required>
                         </div>
-                         <div class="form-group my-2">
-                            <label for="account">Account</label>
-                            <input v-model="form.account" type="text" name="account" class="form-control" required>
+                         <div class="form-group my-3">
+                            <label for="account">Account:</label>
+                            <input v-model="form.account" type="text" placeholder="Enter Account No." name="account" class="form-control" required>
                         </div>
                         <button type="submit" id="simulate" class="btn btn-primary w-100 mt-2" :disabled="isLoading">
                             <div v-if="isLoading" class="text-center">
@@ -78,4 +78,8 @@ const formattedResponse = computed(() => {
 
 </script>
 
-<style scoped></style>
+<style scoped>
+  label,.card-header{
+    font-weight: bold;
+}
+</style>

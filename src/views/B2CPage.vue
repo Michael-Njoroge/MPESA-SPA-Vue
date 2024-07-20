@@ -1,8 +1,8 @@
 <template>
   <div class="container">
     <TopNav />
-    <div class="row my-4">
-      <div class="mx-auto col-sm-8">
+    <div class="row my-2">
+      <div class="mx-auto col-sm-10">
         <div class="card">
           <div class="card-header">
             B2C Simulation
@@ -16,21 +16,21 @@
               <div v-else class="alert alert-info text-center">Fill the form and click the button to simulate B2C.</div>
             </div>
             <form @submit.prevent="simulateb2c" id="b2c-form">
-              <div class="form-group my-2">
-                <label for="amount">Amount</label>
-                <input v-model="form.amount" type="number" min="10" name="amount" required class="form-control">
+              <div class="form-group my-3">
+                <label for="amount">Amount:</label>
+                <input v-model="form.amount" type="number" min="10" placeholder="Enter Amount" name="amount" required class="form-control">
               </div>
-              <div class="form-group my-2">
-                <label for="phone">Phone</label>
-                <input v-model="form.phone" type="number" name="phone" disabled class="form-control">
+              <div class="form-group my-3">
+                <label for="phone">Phone:</label>
+                <input v-model="form.phone" type="number" placeholder="xxxx-xxx-xxx" name="phone" disabled class="form-control">
               </div>
-              <div class="form-group my-2">
-                <label for="occasion">Occasion</label>
-                <input v-model="form.occasion" type="text" name="occasion" required class="form-control">
+              <div class="form-group my-3">
+                <label for="occasion">Occasion:</label>
+                <input v-model="form.occasion" type="text" placeholder="Enter Sample Occasion" name="occasion" required class="form-control">
               </div>
-              <div class="form-group my-2">
-                <label for="remarks">Remarks</label>
-                <input v-model="form.remarks" type="text" name="remarks" required class="form-control">
+              <div class="form-group my-3">
+                <label for="remarks">Remarks:</label>
+                <input v-model="form.remarks" type="text" placeholder="Enter Sample Remark" name="remarks" required class="form-control">
               </div>
               <button id="simulateb2c" type="submit" class="btn btn-primary w-100 mt-2" :disabled="isLoading">
                 <div v-if="isLoading" class="text-center">
@@ -93,4 +93,7 @@
     white-space: pre-wrap;
     word-wrap: break-word;
   }
+   label,.card-header{
+    font-weight: bold;
+}
 </style>

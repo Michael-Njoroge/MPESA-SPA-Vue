@@ -2,7 +2,7 @@
   <div class="container ">
     <TopNav />
     <div class="row mt-2">
-      <div class="mx-auto col-sm-8 h-50">
+      <div class="mx-auto col-sm-10 h-50">
         <div class="card">
           <div class="card-header">
             Register URL
@@ -69,4 +69,7 @@ const formattedResponse = computed(() => {
     white-space: pre-wrap; 
     word-wrap: break-word;
   }
+label,.card-header{
+    font-weight: bold;
+}
 </style>

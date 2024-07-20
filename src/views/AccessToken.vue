@@ -2,7 +2,7 @@
   <div class="container">
     <TopNav />
     <div class="row mt-2">
-      <div class="mx-auto col-sm-8">
+      <div class="mx-auto col-sm-10">
         <div class="card">
           <div class="card-header">
             Obtain Access Token
@@ -73,4 +73,7 @@
     white-space: pre-wrap; 
     word-wrap: break-word;
   }
+.card-header{
+    font-weight: bold;
+}
 </style>

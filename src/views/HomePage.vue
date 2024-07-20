@@ -2,7 +2,7 @@
 <div class="container">
         <TopNav />
         <div class="row mt-2">
-            <div class="mx-auto col-sm-8">
+            <div class="mx-auto col-sm-10">
             <div class="card">
                 <div class="card-header">
                     Laravel/Vue Implementation of Daraja APIs
@@ -81,9 +81,9 @@
 
                   <!-- Regards -->
                   <p class="mt-4 d-flex flex-column">
-                    Best regards,
+                    <b>Best regards,</b>
                     <a style="text-decoration: none;" href="mailto:mikethecoder12@gmail.com" target="_blank">mikethecoder12@gmail.com</a>
-                    Michael Njoroge
+                    <b>Michael Njoroge</b>
                   </p>
 
                 </div>
@@ -101,6 +101,7 @@
 <style scoped>
   .sub-title{
     text-decoration: underline;
+    font-weight: bold;
   }
   .scrollable-content {
     max-height: 575px;
@@ -109,4 +110,7 @@
   a:hover{
     text-decoration: underline;
   }
+.card-header{
+    font-weight: bold;
+}
 </style>
