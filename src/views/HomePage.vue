@@ -104,7 +104,7 @@
     font-weight: bold;
   }
   .scrollable-content {
-    max-height: 575px;
+    max-height: 450px;
     overflow-y: auto;
   }
   a:hover{
