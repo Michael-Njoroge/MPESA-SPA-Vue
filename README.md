@@ -1,6 +1,12 @@
 # Mpesa STK Frontend
+
 This is a Vue frontend for interacting with Mpesa APIs. To use this application, you need to have both the frontend and the backend set up. The backend should handle the Mpesa API requests, while the frontend provides an interface for simulating transactions and other operations.
-Backend API URL: ```https://github.com/Michael-Njoroge/MPESA-STK-Laravel```
+
+## Backend API
+
+Ensure that your backend service is running and accessible. The frontend will interact with the backend through the following API:
+
+**Backend API URL:** [MPESA-Laravel-APIs](https://github.com/Michael-Njoroge/MPESA-STK-Laravel)
 
 ## Setup
 
