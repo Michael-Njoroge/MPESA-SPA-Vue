@@ -18,7 +18,7 @@
             <form @submit.prevent="simulateb2c" id="b2c-form">
               <div class="form-group my-2">
                 <label for="amount">Amount</label>
-                <input v-model="form.amount" type="number" name="amount" required class="form-control">
+                <input v-model="form.amount" type="number" min="10" name="amount" required class="form-control">
               </div>
               <div class="form-group my-2">
                 <label for="phone">Phone</label>
